@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React, { useState } from 'react';
 import MenuHeroSection from '../components/MenuHeroSection';
@@ -8,7 +8,8 @@ import { menuData, MenuItem } from '../data/menuData';
 
 const MenuPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
-  const [cart, setCart] = useState<MenuItem[]>([]);
+  // Correction pour l'avertissement 'cart' is assigned a value but never used.
+  const [, setCart] = useState<MenuItem[]>([]);
 
   // Fonction appelée lorsque l'utilisateur sélectionne une catégorie dans la barre de navigation
   const handleSelectCategory = (category: string) => {
@@ -47,11 +48,10 @@ const MenuPage: React.FC = () => {
               id={category.id}
               title={category.title}
               items={category.data}
-              onAddToCart={handleAddToCart} 
+              onAddToCart={handleAddToCart}
             />
           ))
         ) : (
-          
           categoriesToRender
             .filter(cat => cat.id === activeCategory)
             .map(category => (
@@ -60,7 +60,7 @@ const MenuPage: React.FC = () => {
                 id={category.id}
                 title={category.title}
                 items={category.data}
-                onAddToCart={handleAddToCart} 
+                onAddToCart={handleAddToCart}
               />
             ))
         )}

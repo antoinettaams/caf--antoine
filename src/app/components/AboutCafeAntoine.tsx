@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaQuoteLeft } from 'react-icons/fa'; 
-import { MdOutlineArrowRightAlt } from 'react-icons/md'; 
+import { FaQuoteLeft } from 'react-icons/fa';
+import { MdOutlineArrowRightAlt } from 'react-icons/md';
 
 const AboutCafeAntoine: React.FC = () => {
   return (
@@ -12,14 +12,14 @@ const AboutCafeAntoine: React.FC = () => {
         className="text-cream p-8 rounded-lg flex flex-col justify-center md:col-span-2"
       >
         <h2 className="text-4xl lg:text-6xl font-bold">
-          À propos de Café Antoine
+          &Agrave; propos de Caf&eacute; Antoine
         </h2>
         <p className="mt-4 text-lg lg:text-xl">
-          Plus qu’une cafétéria, Café Antoine est un lieu de partage
-          où chaque tasse de dèguè et chaque bouchée de spaghetti
-          rassemblent la communauté des Antoinais. Détendez-vous dans
-          une ambiance chaleureuse et savourez des plats préparés avec
-          passion pour une expérience unique et authentique.
+          Plus qu&rsquo;une caf&eacute;t&eacute;ria, Caf&eacute; Antoine est un lieu de partage
+          o&ugrave; chaque tasse de d&egrave;gu&egrave; et chaque bouch&eacute;e de spaghetti
+          rassemblent la communaut&eacute; des Antoinais. D&eacute;tendez-vous dans
+          une ambiance chaleureuse et savourez des plats pr&eacute;par&eacute;s avec
+          passion pour une exp&eacute;rience unique et authentique.
         </p>
         <a
           href="#"
@@ -34,8 +34,8 @@ const AboutCafeAntoine: React.FC = () => {
         className="bg-[#bb3b2b] text-cream p-6 rounded-lg flex flex-col justify-center items-center italic text-xl text-center"
       >
         <FaQuoteLeft className="text-6xl mb-4" />
-        Le café, c'est bien plus qu'une boisson, c'est un moment de partage et de
-        convivialité.
+        Le caf&eacute;, c&apos;est bien plus qu&apos;une boisson, c&apos;est un moment de partage et de
+        convivialit&eacute;.
         <span className="mt-2 font-bold">- Les Antoinais</span>
       </div>
     </section>
