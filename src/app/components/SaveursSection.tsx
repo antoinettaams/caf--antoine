@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import Image from 'next/image';
 
@@ -8,11 +10,11 @@ const CafeAntoine: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center p-4 md:px-10 lg:px-40 gap-10">
           <div className="text-left lg:w-1/2">
             <h2 className="font-bold text-5xl text-cream m-2 text-center">
-              Saveurs-Convivialités-Tradition
+              Saveurs-Convivialit&eacute;s-Tradition
             </h2>
             <p className="text-cream text-xl m-2 text-center">
-              Découvrez nos spécialités maison, préparées avec des ingrédients frais et savoureux. Que vous recherchez
-              un repas traditionnel, une pause-café réconfortante ou d'un verre entre amis, notre équipe vous accueille
+              D&eacute;couvrez nos sp&eacute;cialit&eacute;s maison, pr&eacute;par&eacute;es avec des ingr&eacute;dients frais et savoureux. Que vous recherchez
+              un repas traditionnel, une pause-caf&eacute; r&eacute;confortante ou d&apos;un verre entre amis, notre &eacute;quipe vous accueille
               avec le sourire.
             </p>
 
@@ -33,7 +35,7 @@ const CafeAntoine: React.FC = () => {
 
           <div className="flex items-center justify-end w-full lg:w-1/2">
             <Image
-              src="/assets/images/cafe antoine png.png" 
+              src="/assets/images/cafe antoine png.png"
               alt="Cafe Antoine"
               className="w-[200%] h-[80vh] rounded-lg"
               width={800}
@@ -47,7 +49,7 @@ const CafeAntoine: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-full max-w-5xl">
           <div className="relative">
             <Image
-              src="/assets/images/salade.jpg" 
+              src="/assets/images/salade.jpg"
               alt="Salade Mexicaine"
               className="opacity-70 rounded-lg w-full h-[30vh] object-cover"
               width={400}
@@ -61,45 +63,45 @@ const CafeAntoine: React.FC = () => {
           <div className="relative">
             <Image
               src="/assets/images/riz.jpg"
-              alt="Riz créole Antoinais"
+              alt="Riz cr&eacute;ole Antoinais"
               className="opacity-70 rounded-lg w-full h-[30vh] object-cover"
               width={400}
               height={225}
             />
             <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center sm:justify-start p-4 rounded-lg">
-              <span className="text-white text-3xl font-bold uppercase">Riz créole Antoinais</span>
+              <span className="text-white text-3xl font-bold uppercase">Riz cr&eacute;ole Antoinais</span>
             </div>
           </div>
 
           <div className="relative">
             <Image
-              src="/assets/images/pâte rouge.jpg" 
-              alt="Amiwô ailero"
+              src="/assets/images/p&acirc;te rouge.jpg" // Note: Le nom du fichier image lui-même ne devrait pas contenir d'entités HTML. Renommez le fichier physique en 'pate-rouge.jpg' et mettez à jour menuData.ts.
+              alt="Amiw&ocirc; ailero"
               className="opacity-70 rounded-lg w-full h-[30vh] object-cover"
               width={400}
               height={225}
             />
             <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center sm:justify-start p-4 rounded-lg">
-              <span className="text-white text-3xl font-bold uppercase">Amiwô ailero</span>
+              <span className="text-white text-3xl font-bold uppercase">Amiw&ocirc; ailero</span>
             </div>
           </div>
 
           <div className="relative">
             <Image
               src="/assets/images/food3.jpg"
-              alt="Dèguè"
+              alt="D&egrave;gu&egrave;"
               className="opacity-70 rounded-lg w-full h-[30vh] object-cover"
               width={400}
               height={225}
             />
             <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center sm:justify-start p-4 rounded-lg">
-              <span className="text-white text-3xl font-bold uppercase">Dèguè</span>
+              <span className="text-white text-3xl font-bold uppercase">D&egrave;gu&egrave;</span>
             </div>
           </div>
 
           <div className="relative col-span-1 sm:col-span-2">
             <Image
-              src="/assets/images/cafe2.jpg" 
+              src="/assets/images/cafe2.jpg"
               alt="Chawama"
               className="opacity-70 rounded-lg w-full h-[30vh] object-cover"
               width={800}

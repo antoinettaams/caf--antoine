@@ -8,14 +8,14 @@ const StaticMenuShowcase: React.FC = () => {
 
   const renderStars = (filled: number, total: number) => {
     const stars = [];
-    const colorClass = "text-[#bb3b2b]"; 
-    const emptyColorClass = "text-gray-300"; 
+    const colorClass = "text-[#bb3b2b]";
+    const emptyColorClass = "text-gray-300";
 
     for (let i = 0; i < filled; i++) {
-      stars.push(<span key={`filled-${i}`} className={colorClass}>★</span>); // Étoile pleine
+      stars.push(<span key={`filled-${i}`} className={colorClass}>&#9733;</span>); // Étoile pleine (★)
     }
     for (let i = 0; i < total - filled; i++) {
-      stars.push(<span key={`empty-${i}`} className={emptyColorClass}>☆</span>); // Étoile vide
+      stars.push(<span key={`empty-${i}`} className={emptyColorClass}>&#9734;</span>); // Étoile vide (☆)
     }
     return stars;
   };
@@ -26,12 +26,12 @@ const StaticMenuShowcase: React.FC = () => {
       <nav>
         <ul className="flex justify-start text-2xl gap-4 m-4 sm:m-6 lg:m-8">
           <li
-            className={`border-b-0 hover:border-b-2 hover:border-white transition-all duration-300 cursor-pointer font-bold text-white ${ // Correction ici: text-whitev -> text-white
+            className={`border-b-0 hover:border-b-2 hover:border-white transition-all duration-300 cursor-pointer font-bold text-white ${
               activeSection === 'specialites' ? 'border-b-2 border-white' : ''
             }`}
             onClick={() => setActiveSection('specialites')}
           >
-            <span>Nos spécialités</span>
+            <span>Nos sp&eacute;cialit&eacute;s</span>
           </li>
           <li
             className={`border-b-0 hover:border-b-2 hover:border-white transition-all duration-300 cursor-pointer font-amatic font-bold text-cream ${
@@ -44,7 +44,7 @@ const StaticMenuShowcase: React.FC = () => {
         </ul>
       </nav>
 
-      {/* Nos spécialités */}
+      {/* Nos sp&eacute;cialit&eacute;s */}
       <aside id="specialites" className={`mt-8 w-full ${activeSection === 'specialites' ? '' : 'hidden'}`}>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
           {/* Item 1: Chawama Cheddar */}
@@ -61,12 +61,12 @@ const StaticMenuShowcase: React.FC = () => {
                 Chawama Cheddar
               </h3>
               <p className="text-gray-600 text-lg">
-                Découvrez notre chawama, un mélange de viande de boeuf haché, frites, et de légumes frais. Un délice à savourer !
+                D&eacute;couvrez notre chawama, un m&eacute;lange de viande de boeuf hach&eacute;, frites, et de l&eacute;gumes frais. Un d&eacute;lice &agrave; savourer !
               </p>
               <div className="flex justify-between items-center mt-2">
                 <span className="bg-[#bb3b2b] text-white px-3 py-1 rounded-full font-bold">2000 FCFA</span>
                 <div className="flex text-2xl">
-                  {renderStars(5, 5)} 
+                  {renderStars(5, 5)}
                 </div>
               </div>
             </div>
@@ -86,12 +86,12 @@ const StaticMenuShowcase: React.FC = () => {
                 Pasta Carne
               </h3>
               <p className="text-gray-600 text-lg">
-                Spaghetti et légumes frais, accompagnés de sauce tomate.
+                Spaghetti et l&eacute;gumes frais, accompagn&eacute;s de sauce tomate.
               </p>
               <div className="flex justify-between items-center mt-2">
                 <span className="bg-[#bb3b2b] text-white px-3 py-1 rounded-full font-bold">600 FCFA</span>
                 <div className="flex text-2xl">
-                  {renderStars(4, 5)} 
+                  {renderStars(4, 5)}
                 </div>
               </div>
             </div>
@@ -111,12 +111,12 @@ const StaticMenuShowcase: React.FC = () => {
                 Salade Antoinaise
               </h3>
               <p className="text-gray-600 text-lg">
-                Salade composée de légumes frais, œuf, sauce onctueuse et morceaux de viandes.
+                Salade compos&eacute;e de l&eacute;gumes frais, &oelig;uf, sauce onctueuse et morceaux de viandes.
               </p>
               <div className="flex justify-between items-center mt-2">
                 <span className="bg-[#bb3b2b] text-white px-3 py-1 rounded-full font-bold">1500 FCFA</span>
                 <div className="flex text-2xl">
-                  {renderStars(3, 5)} 
+                  {renderStars(3, 5)}
                 </div>
               </div>
             </div>
@@ -136,12 +136,12 @@ const StaticMenuShowcase: React.FC = () => {
                 Tortilla de Antonio
               </h3>
               <p className="text-gray-600 text-lg">
-                Omelette aux frites de pomme de terre enrobées de sauce et d'herbes à l'antoinaise accompagné d'une salade verte.
+                Omelette aux frites de pomme de terre enrob&eacute;es de sauce et d&apos;herbes &agrave; l&apos;antoinaise accompagn&eacute; d&apos;une salade verte.
               </p>
               <div className="flex justify-between items-center mt-2">
                 <span className="bg-[#bb3b2b] text-white px-3 py-1 rounded-full font-bold">2500 FCFA</span>
                 <div className="flex text-2xl">
-                  {renderStars(5, 5)} 
+                  {renderStars(5, 5)}
                 </div>
               </div>
             </div>
@@ -166,7 +166,7 @@ const StaticMenuShowcase: React.FC = () => {
                 Coktail au raisin
               </h3>
               <p className="text-gray-600 text-lg">
-                Un mélange rafraîchissant de raisin frais, de jus d'orange et d'une touche de menthe.
+                Un m&eacute;lange rafra&icirc;chissant de raisin frais, de jus d&apos;orange et d&apos;une touche de menthe.
               </p>
               <div className="flex justify-between items-center mt-2">
                 <span className="bg-[#bb3b2b] text-white px-3 py-1 rounded-full font-bold">2000 FCFA</span>
@@ -177,21 +177,21 @@ const StaticMenuShowcase: React.FC = () => {
             </div>
           </div>
 
-          {/* Item 2: Coktail à l'ananas */}
+          {/* Item 2: Coktail &agrave; l'ananas */}
           <div className="flex flex-col sm:flex-row bg-cream p-4 rounded-lg w-full items-center">
             <Image
               src="/assets/images/ananas.jfif"
-              alt="Coktail à l'ananas"
+              alt="Coktail &agrave; l&apos;ananas"
               width={160}
               height={160}
               className="w-full sm:w-40 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-4"
             />
             <div className="w-full text-center sm:text-left">
               <h3 className="text-2xl font-bold text-[#bb3b2b]">
-                Coktail à l'ananas
+                Coktail &agrave; l&apos;ananas
               </h3>
               <p className="text-gray-600 text-lg">
-                Un cocktail tropical rafraîchissant à base d'ananas frais, accompagné d'une touche sucrée et acidulée pour un goût exotique et revigorant.
+                Un cocktail tropical rafra&icirc;chissant &agrave; base d&apos;ananas frais, accompagn&eacute; d&apos;une touche sucr&eacute;e et acidul&eacute;e pour un go&ucirc;t exotique et revigorant.
               </p>
               <div className="flex justify-between items-center mt-2">
                 <span className="bg-[#bb3b2b] text-white px-3 py-1 rounded-full font-bold">2000 FCFA</span>
@@ -202,21 +202,21 @@ const StaticMenuShowcase: React.FC = () => {
             </div>
           </div>
 
-          {/* Item 3: Coktail à la pastèque */}
+          {/* Item 3: Coktail &agrave; la past&egrave;que */}
           <div className="flex flex-col sm:flex-row bg-cream p-4 rounded-lg w-full items-center">
             <Image
               src="/assets/images/cosmopolitan.jfif"
-              alt="Coktail à la pastèque"
+              alt="Coktail &agrave; la past&egrave;que"
               width={160}
               height={160}
               className="w-full sm:w-40 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-4"
             />
             <div className="w-full text-center sm:text-left">
               <h3 className="text-2xl font-bold text-[#bb3b2b]">
-                Coktail à la pastèque
+                Coktail &agrave; la past&egrave;que
               </h3>
               <p className="text-gray-600 text-lg">
-                Un cocktail frais et léger, préparé avec de la pastèque juteuse et un soupçon de citron.
+                Un cocktail frais et l&eacute;ger, pr&eacute;par&eacute; avec de la past&egrave;que juteuse et un soup&ccedil;on de citron.
               </p>
               <div className="flex justify-between items-center mt-2">
                 <span className="bg-[#bb3b2b] text-white px-3 py-1 rounded-full font-bold">1500 FCFA</span>
@@ -227,21 +227,21 @@ const StaticMenuShowcase: React.FC = () => {
             </div>
           </div>
 
-          {/* Item 4: Coktail à base de fraise */}
+          {/* Item 4: Coktail &agrave; base de fraise */}
           <div className="flex flex-col sm:flex-row bg-cream p-4 rounded-lg w-full items-center">
             <Image
               src="/assets/images/coktail.jfif"
-              alt="Coktail à base de fraise"
+              alt="Coktail &agrave; base de fraise"
               width={160}
               height={160}
               className="w-full sm:w-40 h-40 object-cover rounded-lg mb-4 sm:mb-0 sm:mr-4"
             />
             <div className="w-full text-center sm:text-left">
               <h3 className="text-2xl font-bold text-[#bb3b2b]">
-                Coktail à base de fraise
+                Coktail &agrave; base de fraise
               </h3>
               <p className="text-gray-600 text-lg">
-                Un délicieux mélange de fraises fraîches, de jus de fruits rafraîchissant et une touche sucrée pour un moment de pure fraîcheur.
+                Un d&eacute;licieux m&eacute;lange de fraises fra&icirc;ches, de jus de fruits rafra&icirc;chissant et une touche sucr&eacute;e pour un moment de pure fra&icirc;cheur.
               </p>
               <div className="flex justify-between items-center mt-2">
                 <span className="bg-[#bb3b2b] text-white px-3 py-1 rounded-full font-bold">2500 FCFA</span>

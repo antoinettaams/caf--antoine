@@ -1,10 +1,11 @@
-'use client'
-import Link from 'next/link'; // Importe le composant Link
+'use client';
+
+import Link from 'next/link';
+import React, { useEffect } from 'react';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaTiktok, FaCoffee, FaBox, FaPhone, FaEnvelope } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { MdEvent } from "react-icons/md";
 import { GiNoodles } from "react-icons/gi";
-import React, { useEffect } from 'react'; 
 
 export default function Footer() {
   useEffect(() => {
@@ -22,17 +23,17 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center mb-6">
               <h2 className="text-3xl font-bold">
-                Café <span className="text-cream">Antoine</span>
+                Caf&eacute; <span className="text-cream">Antoine</span>
               </h2>
             </div>
 
             <p className="text-lg mb-6 max-w-md text-cream">
-              Café Antoine est plus qu'un café, c'est un lieu de rencontre et de partage
+              Caf&eacute; Antoine est plus qu&apos;un caf&eacute;, c&apos;est un lieu de rencontre et de partage
               pour les amateurs de saveurs uniques.
             </p>
 
             <div className="flex gap-4">
-              {/* Liens réseaux sociaux*/}
+              {/* Liens réseaux sociaux */}
               <a
                 href="https://www.facebook.com/cafeantoinebenin"
                 className="social-icon w-10 h-10 rounded-full bg-[#bb3b2b] text-cream flex items-center justify-center hover:bg-[#903024] hover:text-white transition-colors duration-300"
@@ -71,7 +72,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Colonne 2 - Liens rapides*/}
+          {/* Colonne 2 - Liens rapides */}
           <div>
             <h2 className="text-xl font-bold mb-6 pb-2 border-b border-cream inline-block">
               Liens rapides
@@ -84,7 +85,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about" className="text-cream hover:text-[#bb3b2b] transition-colors duration-300">
-                  À propos
+                  &Agrave; propos
                 </Link>
               </li>
               <li>
@@ -108,10 +109,10 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#" 
+                  href="#"
                   className="text-cream hover:text-white transition-colors duration-300 flex items-center"
                 >
-                  <FaCoffee className="text-cream mr-2" /> Café & Pâtisseries
+                  <FaCoffee className="text-cream mr-2" /> Caf&eacute; &amp; P&acirc;tisseries
                 </a>
               </li>
               <li>
@@ -119,7 +120,7 @@ export default function Footer() {
                   href="#"
                   className="text-cream hover:text-white transition-colors duration-300 flex items-center"
                 >
-                  <GiNoodles className="text-cream mr-2" /> Brunch & Dîners
+                  <GiNoodles className="text-cream mr-2" /> Brunch &amp; D&icirc;ners
                 </a>
               </li>
               <li>
@@ -127,7 +128,7 @@ export default function Footer() {
                   href="#"
                   className="text-cream hover:text-white transition-colors duration-300 flex items-center"
                 >
-                  <MdEvent className="text-cream mr-2" /> Événements privés
+                  <MdEvent className="text-cream mr-2" /> &Eacute;v&eacute;nements priv&eacute;s
                 </a>
               </li>
               <li>
@@ -149,7 +150,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <FiMapPin className="text-cream mt-1 mr-3" />
-                <span className="text-cream">Cotonou Fidjrossè</span>
+                <span className="text-cream">Cotonou Fidjross&egrave;</span>
               </li>
               <li className="flex items-start">
                 <FiMapPin className="text-cream mt-1 mr-3" />
@@ -171,20 +172,20 @@ export default function Footer() {
         <div className="border-t border-cream/20 pt-6">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-cream/80 mb-4 md:mb-0 text-center md:text-left">
-              © <span id="current-year"></span> Café Antoine. Tous droits réservés.
+              &copy; <span id="current-year"></span> Caf&eacute; Antoine. Tous droits r&eacute;serv&eacute;s.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a
                 href="#"
                 className="text-cream/80 hover:text-cream text-sm transition-colors duration-300"
               >
-                Mentions légales
+                Mentions l&eacute;gales
               </a>
               <a
                 href="#"
                 className="text-cream/80 hover:text-cream text-sm transition-colors duration-300"
               >
-                Politique de confidentialité
+                Politique de confidentialit&eacute;
               </a>
               <a
                 href="#"
