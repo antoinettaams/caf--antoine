@@ -24,7 +24,7 @@ export const menuData: MenuItem[] = [
     name: 'Salade sympa',
     description: 'Une salade qui vous pique un sourire à chaque bouchée.',
     price: '2000f',
-    image: 'sympa.jpg',
+    image: '/assets/images/sympa.jpg',
     category: 'starters',
   },
   {
