@@ -16,7 +16,7 @@ export const menuData: MenuItem[] = [
     name: 'Salade mexicaine',
     description: 'Salade fraîche au poulet grillé, avocat et maïs, accompagnée d\'une sauce onctueuse.',
     price: '3000f',
-    image: 'salade.jpg',
+    image: '/assets/images/salade.jpg',
     category: 'starters',
   },
   {
@@ -32,7 +32,7 @@ export const menuData: MenuItem[] = [
     name: 'Salade Antoinaise',
     description: 'Un mélange frais de thon, œufs, légumes croquants et olives, pour une touche ensoleillée.',
     price: '1500f',
-    image: 'antoinaise.jpg',
+    image: '/assets/images/antoinaise.jpg',
     category: 'starters',
   },
 
@@ -42,7 +42,7 @@ export const menuData: MenuItem[] = [
     name: 'Sautés de tripes de boeuf',
     description: 'Sautés de tripes de bœuf – Fondantes, savoureuses et mijotées à la perfection',
     price: '2000f',
-    image: 'rizz.jpg',
+    image: '/assets/images/rizz.jpg',
     category: 'mains',
   },
   {
@@ -50,7 +50,7 @@ export const menuData: MenuItem[] = [
     name: 'Pâte noir',
     description: 'Pâtes noires aux légumes – Une explosion de saveurs',
     price: '1500f',
-    image: 'pate-noir.jpg', 
+    image: '/assets/images/pate-noir.jpg', 
     category: 'mains',
   },
   {
@@ -58,7 +58,7 @@ export const menuData: MenuItem[] = [
     name: 'Spaghetti Royal Sauté',
     description: 'Spaghettis, légumes sautés et viande tendre, un délice savoureux!',
     price: '2000f',
-    image: 'patte.jpg',
+    image: '/assets/images/patte.jpg',
     category: 'mains',
   },
 
@@ -68,7 +68,7 @@ export const menuData: MenuItem[] = [
     name: 'Dèguè au mil',
     description: 'Délice onctueux de semoule de mil et yaourt, pour une touche de fraîcheur authentique.',
     price: '500f',
-    image: 'food3.jpg',
+    image: '/assets/images/food3.jpg',
     category: 'desserts',
   },
   {
@@ -76,7 +76,7 @@ export const menuData: MenuItem[] = [
     name: 'Brioches Choco-Fondantes',
     description: 'Tranches de brioche dorées, sublimées par un coulis onctueux de chocolat.',
     price: '2000f',
-    image: 'dessert.jpg',
+    image: '/assets/images/dessert.jpg',
     category: 'desserts',
   },
   {
@@ -84,7 +84,7 @@ export const menuData: MenuItem[] = [
     name: 'Dèguè au couscous',
     description: 'Alliance parfaite de couscous moelleux et de yaourt onctueux pour un plaisir rafraîchissant.',
     price: '500f',
-    image: 'degue-couscous.jpg', 
+    image: '/assets/images/degue-couscous.jpg', 
     category: 'desserts',
   },
 
@@ -94,7 +94,7 @@ export const menuData: MenuItem[] = [
     name: 'Fresh Tama',
     description: 'Tamarion frais, fais maison.',
     price: '500f',
-    image: 'tamarin.jpg',
+    image: '/assets/images/tamarin.jpg',
     category: 'drinks',
   },
   {
@@ -102,7 +102,7 @@ export const menuData: MenuItem[] = [
     name: 'Rouge pastèque',
     description: 'Jus à base de fruits frais fait maison',
     price: '700f',
-    image: 'jus-pasteque.jpg', 
+    image: '/assets/images/jus-pasteque.jpg', 
     category: 'drinks',
   },
   {
@@ -110,7 +110,7 @@ export const menuData: MenuItem[] = [
     name: 'Guiness',
     description: 'Prise de rafraîchissement et d\'énergie',
     price: '700f',
-    image: 'boisson.jpg',
+    image: '/assets/images/boisson.jpg',
     category: 'drinks',
   },
 ];
