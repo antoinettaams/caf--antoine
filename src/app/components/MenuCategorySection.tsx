@@ -30,5 +30,5 @@ const MenuCategorySection: React.FC<MenuCategorySectionProps> = ({ id, title, it
     </section>
   );
 };
-
+ 
 export default MenuCategorySection;

@@ -35,7 +35,7 @@ const CafeAntoine: React.FC = () => {
 
           <div className="flex items-center justify-end w-full lg:w-1/2">
             <Image
-              src="/assets/images/cafe antoine png.png"
+              src="/assets/images/cafe-antoine.png"
               alt="Cafe Antoine"
               className="w-[200%] h-[80vh] rounded-lg"
               width={800}
@@ -75,7 +75,7 @@ const CafeAntoine: React.FC = () => {
 
           <div className="relative">
             <Image
-              src="/assets/images/p&acirc;te rouge.jpg" // Note: Le nom du fichier image lui-même ne devrait pas contenir d'entités HTML. Renommez le fichier physique en 'pate-rouge.jpg' et mettez à jour menuData.ts.
+              src="/assets/images/pate-rouge.jpg" // Note: Le nom du fichier image lui-même ne devrait pas contenir d'entités HTML. Renommez le fichier physique en 'pate-rouge.jpg' et mettez à jour menuData.ts.
               alt="Amiw&ocirc; ailero"
               className="opacity-70 rounded-lg w-full h-[30vh] object-cover"
               width={400}

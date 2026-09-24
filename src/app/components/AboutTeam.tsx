@@ -12,7 +12,7 @@ const AboutTeam: React.FC = () => {
     {
       name: "DOSSOU Antoine",
       role: "Le Fondateur du Café",
-      image: "/assets/images/ananas.jfif", 
+      image: "/assets/images/ananas.jpg", 
       alt: "Portrait d'Antoine Dossou, fondateur du café"
     },
     {

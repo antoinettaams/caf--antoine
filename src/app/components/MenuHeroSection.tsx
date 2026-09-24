@@ -8,7 +8,7 @@ const MenuHeroSection: React.FC = () => {
         <div className="absolute top-0 left-0 w-32 h-32 bg-cream rounded-full mix-blend-overlay animate-bounce animation-delay-100"></div>
         <div className="absolute top-1/4 right-1/4 w-24 h-24 bg-cream rounded-full mix-blend-overlay animate-bounce animation-delay-300"></div>
         <div className="absolute bottom-1/3 left-1/3 w-20 h-20 bg-cream rounded-full mix-blend-overlay animate-bounce"></div>
-      </div>
+      </div> 
 
       <div className="container mx-auto px-4 text-center relative">
         {/* Titre principal avec effet de rebond */}

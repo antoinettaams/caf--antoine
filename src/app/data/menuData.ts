@@ -16,7 +16,7 @@ export const menuData: MenuItem[] = [
     name: 'Salade mexicaine',
     description: 'Salade fraîche au poulet grillé, avocat et maïs, accompagnée d\'une sauce onctueuse.',
     price: '3000f',
-    image: '/assets/images/salade.jpg',
+    image: '/assets/images/saladantoinaise.jpg',
     category: 'starters',
   },
   {
@@ -102,7 +102,7 @@ export const menuData: MenuItem[] = [
     name: 'Rouge pastèque',
     description: 'Jus à base de fruits frais fait maison',
     price: '700f',
-    image: '/assets/images/jus-pasteque.jpg', 
+    image: '/assets/images/pasteque.jpg', 
     category: 'drinks',
   },
   {

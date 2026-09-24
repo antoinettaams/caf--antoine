@@ -47,4 +47,4 @@ const MenuCategoryNav: React.FC<MenuCategoryNavProps> = ({ onSelectCategory, act
   );
 };
 
-export default MenuCategoryNav;
+export default MenuCategoryNav; 

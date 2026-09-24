@@ -16,22 +16,21 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({ item, animationDelay, onAdd
     return null;
   }
 
-  const publicImagePath = `/assets/images/${item.image}`;
-
   return (
     <div
-      className={`menu-item opacity-0 animate-fade-in bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1`}
+      className="menu-item bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
       data-category={item.category}
       style={{ animationDelay: animationDelay || '0s' }}
     >
-      <div className="relative h-48 overflow-hidden">
+      {/* Conteneur de l'image avec fond de secours (bg-gray-100) */}
+      <div className="relative w-full h-48 bg-gray-100 overflow-hidden">
         <Image
-          src={publicImagePath}
+          src={item.image}
           alt={item.name}
           fill
+          unoptimized
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          style={{ objectFit: 'cover' }}
-          className="transition-transform duration-500 hover:scale-110"
+          className="object-cover transition-transform duration-500 hover:scale-110"
         />
       </div>
 
